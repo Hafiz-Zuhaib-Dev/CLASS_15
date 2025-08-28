@@ -1,0 +1,44 @@
+#parent {
+    display: flex;
+    gap: 30px;
+}
+
+.box {
+    background-color: tomato;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: sans-serif;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-weight: 600;
+    /* transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 1s; */
+
+    transition: all 0.4s linear;
+}
+
+.translate:hover {
+    transform: translate(30px);
+}
+
+.rotate:hover {
+    transform: rotate(60deg);
+}
+
+.skew:hover {
+    transform: skew(30deg);
+}
+
+.scale:hover {
+    transform: scale(1.2);
+}
+
+.combo:hover {
+    transform: translate(30px) scale(1.2) skew(30deg) rotate(60deg);
+}
